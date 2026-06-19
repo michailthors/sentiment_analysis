@@ -3,8 +3,8 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 
 # Load model
-model = DistilBertForSequenceClassification.from_pretrained('./models/sentiment_model')
-tokenizer = DistilBertTokenizer.from_pretrained('./models/sentiment_model')
+model = DistilBertForSequenceClassification.from_pretrained('michaelthors/sentiment-analysis-distilbert')
+tokenizer = DistilBertTokenizer.from_pretrained('michaelthors/sentiment-analysis-distilbert')
 model.eval()
 
 def predict_sentiment(text):
